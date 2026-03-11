@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Lock, User, AlertTriangle } from "lucide-react";
+import logoInfinity from "@/assets/logo-infinity.png";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -25,9 +26,9 @@ const Login = () => {
       <div className="w-full max-w-sm">
         {/* Logo */}
         <Link to="/" className="flex items-center justify-center gap-2 mb-10">
-          <Lock className="h-6 w-6 text-primary" />
+          <img src={logoInfinity} alt="InfinityNow logo" className="h-7 w-7" />
           <span className="font-display text-lg font-bold tracking-wider text-foreground">
-            CYBER<span className="text-primary">FACTORY</span>
+            INFINITY<span className="text-primary">NOW</span>
           </span>
         </Link>
 
