@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { Shield, Network, Terminal, ChevronRight, Mail, Phone, MapPin } from "lucide-react";
-import logoInfinity from "@/assets/logo-infinity.png";
+import { Shield, Network, Terminal, Lock, ChevronRight, Mail, Phone, MapPin } from "lucide-react";
 import heroCyber from "@/assets/hero-cyber.jpg";
 import serviceShield from "@/assets/service-shield.jpg";
 import serviceNetwork from "@/assets/service-network.jpg";
@@ -34,9 +33,9 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
         <div className="container mx-auto flex items-center justify-between py-4 px-4">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logoInfinity} alt="InfinityNow logo" className="h-7 w-7" />
+            <Lock className="h-6 w-6 text-primary" />
             <span className="font-display text-lg font-bold tracking-wider text-foreground">
-              INFINITY<span className="text-primary">NOW</span>
+              CYBER<span className="text-primary">FACTORY</span>
             </span>
           </Link>
           <div className="hidden md:flex items-center gap-8 font-body text-sm text-muted-foreground">
@@ -63,9 +62,8 @@ const Index = () => {
           <div className="inline-block rounded-full border border-primary/30 bg-primary/5 px-4 py-1 mb-6">
             <span className="font-body text-xs text-primary tracking-wide">🔒 Seguridad para PYMEs</span>
           </div>
-          <img src={logoInfinity} alt="InfinityNow" className="h-20 w-20 mx-auto mb-6" />
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-black tracking-tight text-foreground mb-6 text-glow">
-            INFINITY<span className="text-primary">NOW</span>
+            CYBER<span className="text-primary">FACTORY</span><span className="text-primary">.loc</span>
           </h1>
           <p className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
             Protegemos tu negocio con soluciones de ciberseguridad a medida. 
@@ -126,7 +124,7 @@ const Index = () => {
             NOSOTROS
           </h2>
           <p className="font-body text-muted-foreground leading-relaxed mb-8">
-            InfinityNow es una empresa emergente especializada en ciberseguridad para PYMEs. 
+            CyberFactory es una empresa emergente especializada en ciberseguridad para PYMEs. 
             Nuestro equipo de expertos en seguridad informática, redes y desarrollo seguro 
             trabaja para proteger los activos digitales de tu empresa con tecnología de vanguardia 
             y un enfoque personalizado.
@@ -159,7 +157,7 @@ const Index = () => {
           <div className="space-y-4 font-body text-muted-foreground">
             <div className="flex items-center justify-center gap-3">
               <Mail className="h-4 w-4 text-primary" />
-              <span>contacto@infinitynow.loc</span>
+              <span>contacto@cyberfactory.loc</span>
             </div>
             <div className="flex items-center justify-center gap-3">
               <Phone className="h-4 w-4 text-primary" />
@@ -177,7 +175,7 @@ const Index = () => {
       <footer className="border-t border-border py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="font-body text-xs text-muted-foreground">
-            © 2026 InfinityNow — Todos los derechos reservados.
+            © 2026 CyberFactory.loc — Todos los derechos reservados.
           </p>
         </div>
       </footer>
