@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Lock, User, AlertTriangle } from "lucide-react";
+import logoInfinity from "@/assets/logo-infinity.png";
 
 const Login = () => {
   const [username, setUsername] = useState("");
